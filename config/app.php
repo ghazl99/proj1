@@ -80,7 +80,12 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ar',
+    // 'languages' =>[
+    // 'ar' => 'العربية',
+    // 'en' => 'English'
+    // ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +99,19 @@ return [
     */
 
     'fallback_locale' => 'en',
+/*
+|--------------------------------------------------------------------------
+| Available locales
+|--------------------------------------------------------------------------
+|
+| List all locales that your application works with
+|
+*/
 
+'available_locales' => [
+  'English' => 'en',
+  'arabic' => 'ar',
+],
     /*
     |--------------------------------------------------------------------------
     | Faker Locale
@@ -174,7 +191,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        //excel
+        // Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
 
     /*
@@ -229,6 +247,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        // 'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 
